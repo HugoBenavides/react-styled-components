@@ -4,7 +4,9 @@ import { lista } from "../../info";
 
 const List = () => {
     return <Box>
-        Hola
+        {
+            <h2>Hola</h2>
+        }
     </Box>
 
 }
