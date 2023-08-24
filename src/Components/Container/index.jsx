@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components"
 import Title from "../Title";
 import Account from "../Account";
+import List from "../List/List.jsx";
 
 const ContainerStyle = styled.div`
   background-color: #f1f1f1;
@@ -13,9 +14,6 @@ const ContentStyle = styled.section `
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  @media (max-width: 800px) {
-    flex-direction: column;
-}
 `
 
 const Container = () => {
@@ -24,6 +22,7 @@ const Container = () => {
       <Title>Smart Bank</Title>
       <ContentStyle>
         <Account />
+        <List />
       </ContentStyle>
     </ContainerStyle>
   );
