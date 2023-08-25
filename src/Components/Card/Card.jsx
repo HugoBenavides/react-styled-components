@@ -11,8 +11,26 @@ const Card = styled.div`
     padding: 10px;
     font-size: 12px;
 `
+const Info = styled.div`
+    display: flex;
+    flex-direction: column;
+    .type{
+        font-weight: bold;
+    }
+`
 
 
-export default ()=>{
-    return <Card>{cargo}</Card>
+export default ({cargo})=>{ //se creara automaticamete una card por cargo 
+    console.log (cargo)
+    const {id, type, value, from, date } = cargo // se destructura la informacion de cada uno de los cargo
+    return (
+        <Card>
+            <Info>
+                <span className="type" >{type}</span>
+                <span>{value}</span>
+                <span>{from}</span>
+            </Info>
+            <span>{date}</span>
+        </Card>
+    )
 };
