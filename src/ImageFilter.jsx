@@ -9,8 +9,7 @@ import otros from "../src/assets/images/otros.svg"
 import { Icono } from "./Components/UI"
 
 export default (type)=> {
-
-    console.log(type)
+    //console.log(type)
     const Images = {
         Restaurante: <Icono src={alimentacion} alt="Restaurante" />,
         Utilidades: <Icono src={utilidades} alt="Utilidades" />,
